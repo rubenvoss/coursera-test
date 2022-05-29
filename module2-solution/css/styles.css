@@ -1,0 +1,107 @@
+/********** Base styles **********/
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  h1 {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+p {
+    margin: 0;
+  }
+
+h1 {
+  font-size: 1.75em;
+}
+
+
+
+/* text properties */
+.text {
+  position: relative;
+  background-color: grey;
+  padding: 1.5%;
+  margin: 1%;
+  padding-top: 4.5em;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  font-size: 1em;
+}
+
+/* title properties */
+.section-title {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 1em;
+  margin: 0;
+  color: whitesmoke;
+  font-weight: bold;  
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  border-top-style: none;
+  border-right-style: none;
+  font-size: 1.25em;
+}
+
+/* background colors */
+.red {
+  background-color: darkred;
+}
+.blue {
+  background-color: darkblue;
+}
+.yellow {
+  background-color: darkgoldenrod;
+}
+
+  
+
+
+
+
+
+
+
+  /* Simple Responsive Framework. */
+  .row {
+    width: 100%;
+  }
+
+   /* phone view -> for some reason the device toolbar in google chrome doesn't work with this... 
+      when it's in the normal browser it works...  */
+   @media (max-width: 767px) {
+     .col-phone {
+       width: 98%;
+       margin-top: 2%;
+     }
+  }
+
+    /********** tablet view **********/
+    @media (min-width: 768px) and (max-width: 991px) {
+      .col-tablet-1, .col-tablet-2 {
+        float: left;
+
+      }
+      .col-tablet-1 {
+        width: 48%;
+      }
+      .col-tablet-2 {
+        width: 98%
+      }
+
+
+      }
+
+  
+  /********** desktop view *********/
+  @media (min-width: 992px) {
+    .col-desktop {
+      float: left;
+      width: 31.33%;
+    }
+  }
