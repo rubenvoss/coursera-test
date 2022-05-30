@@ -1,0 +1,9 @@
+.paragraph {
+    height: 10000px;
+    background-color: lightgray;
+    margin: 2%;
+    padding: 1%;
+}
+.dropdown {
+    background-color: lightblue;
+}
